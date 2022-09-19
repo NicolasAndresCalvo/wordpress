@@ -16,7 +16,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: mysql:5.7
+      - image: mysql:5.7 ## nicolasandrescalvo/mysql-dh:1.0
         name: mysql
         ports:
         - containerPort: 3306

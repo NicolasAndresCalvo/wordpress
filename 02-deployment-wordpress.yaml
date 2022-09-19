@@ -16,7 +16,7 @@ spec:
         app: wordpress
     spec:
       containers:
-      - image: wordpress:latest
+      - image: wordpress:latest ## nicolasandrescalvo/wordpress-dh:1.0
         name: wordpress
         ports:
         - containerPort: 80
