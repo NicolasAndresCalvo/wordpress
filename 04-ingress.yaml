@@ -30,7 +30,8 @@ metadata:
   namespace: wordpress
 spec:
   rules:
-    - http:
+    - host: digital.aument.io
+      http:
         paths:
           - path: /.*
             pathType: ImplementationSpecific
