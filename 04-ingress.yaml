@@ -1,14 +1,34 @@
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: example-ingress
+#   annotations:
+#     nginx.ingress.kubernetes.io/use-regex: "true"
+#   namespace: wordpress
+# spec:
+#   rules:
+#     - host: wordpress.info
+#       http:
+#         paths:
+#           - path: /.*
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: wordpress
+#                 port:
+#                   number: 80
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: example-ingress
   annotations:
-    nginx.ingress.kubernetes.io/use-regex: "true"
+    # nginx.ingress.kubernetes.io/use-regex: "true"
+      kubernetes.io/ingress.class: alb
   namespace: wordpress
 spec:
   rules:
-    - host: wordpress.info
-      http:
+    # - host: wordpress.info
+    - http:
         paths:
           - path: /.*
             pathType: Prefix
