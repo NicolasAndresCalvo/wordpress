@@ -30,7 +30,7 @@ metadata:
   namespace: wordpress
 spec:
   rules:
-    - host: digital.aum.to
+    - host: digital.aument.digital
       http:
         paths:
           - path: /.*
