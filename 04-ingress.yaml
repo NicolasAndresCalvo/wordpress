@@ -26,6 +26,7 @@ metadata:
       alb.ingress.kubernetes.io/subnets: subnet-0fd06287ca1408481, subnet-0dad1b9e72e21481b, subnet-04c047ae2c0d58cb2
       alb.ingress.kubernetes.io/target-type: ip
       alb.ingress.kubernetes.io/scheme: internet-facing
+      alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
   namespace: wordpress
 spec:
   rules:
